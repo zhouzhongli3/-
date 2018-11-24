@@ -1,0 +1,624 @@
+.header {
+    position: relative;
+    z-index: 999;
+    width: 100%;
+}
+.header .header-slider {
+    width: 100%;
+    height: 30px;
+    background-color: #3A3A3A;
+}
+.header-slider .slider {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    color: #9f9f9f;
+}
+.header-slider .slider a {
+    color: rgb(159,159,159);
+}
+.header-slider .slider .left {
+    width: 100px;
+    height: 100%;
+    float: left;
+}
+.header-slider .slider .left a {
+    width: 24px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 7px;
+}
+.header-slider .slider .right {
+    width: 290px;
+    height: 30px;
+    float: right;
+}
+.slider .right ul {
+    width: 100%;
+    height: 100%;
+}
+.slider .right ul li {
+    height: 100%;
+    float: left;
+    margin-right: 10px;
+    line-height: 30px;
+}
+.slider .right ul .login {
+    margin-left: 10px;
+}
+.slider .right ul .help {
+    margin-right: 0;
+}
+.slider .right ul li span {
+    margin-right: 10px;
+    color: white;
+}
+.slider .right .help .consult {
+    right: 83px;
+    top: 30px;
+    position: absolute;
+    width: 280px;
+    display: none;
+    z-index: 1200;
+}
+.help .consult .consult-ul li {
+    float: left;
+    width: 100%;
+    height: 100%;
+    background-color: #3A3A3A;
+    color: white;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.help .consult .consult-ul .special:hover {
+    background-color: rgb(26,26,26);
+}
+.help .consult .consult-ul li:nth-child(3),
+.help .consult .consult-ul li:nth-child(5){
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+.help .consult .consult-ul li:nth-child(3) {
+    border-top: 1px solid rgb(159,159,159);
+    color: rgb(159,159,159);
+    padding-bottom: 0;
+}
+.help .consult .consult-ul li:nth-child(4){
+    font-size: 18px;
+}
+.help .consult .consult-ul .special {
+    cursor: pointer;
+}
+.right .help:hover .consult{
+    display: block;
+}
+
+.spNavTopWrap {
+    width: 100%;
+    margin-bottom: 2px;
+}
+.spNavTopWrap .spNavWrap {
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+}
+.spNavWrap .spLogoWrap {
+    width: 220px;
+    height: 65px;
+    padding: 8px;
+    float: left;
+}
+.spNavWrap .spLogo {
+    height: 58px;
+}
+.spNavWrap .spNavList {
+    height: 80px;
+    float: left;
+    padding-left: 80px;
+    padding-right: 100px;
+}
+.spNavWrap .spNavList .spNavItem{
+    width: 96px;
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 80px;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    margin-right: 10px;
+}
+.spNavWrap .spNavList .spNavItem a {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    display: inline-block;
+}
+.spNavList .spNavItem.special a{
+    color: #19ACF7;
+}
+.spNavList .spNavItem.special {
+    border-bottom: 2px solid #19ACF7;
+}
+.active{
+    border-bottom: 2px solid #19ACF7;
+}
+.active a {
+    color: #19ACF7;
+}
+/*轮播图*/
+.main {
+    width: 100%;
+}
+.banner {
+    width: 100%;
+    height: 360px;
+    position: relative;
+    overflow: hidden;
+    /*top: -295px;*/
+}
+.banner ul {
+    width: 400%;
+    height: 100%;
+    position: absolute;
+}
+.banner ul li {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+.banner ul li a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;;
+}
+.banner ul li a img{
+  margin: 0 -100%;
+}
+/*指示器*/
+.banner ol {
+    width: 100px;
+    height: 6px;
+    position: absolute;
+    left: 50%;
+    margin-left: -59px;
+    bottom: 15px;
+    z-index: 3;
+}
+.banner ol li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 15px;
+    background-color: rgba(256,256,256,0.5);
+}
+.banner ol .current {
+    width: 15px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/*解决方案hover*/
+.clearFloat::after {
+    content: '.';
+    display:block;
+    height:0;
+    visibility:hidden;
+    clear:both;
+}
+.menu {
+    width: 100%;
+    height: 360px;
+    background: rgba(0,0,0,0.9);
+    position: absolute;
+    padding: 22px 0 18px 0;
+    z-index: 110;
+    overflow: hidden;
+    box-sizing: border-box !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: none;
+    left: 0;
+}
+.header-container {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.header-menu ul {
+    list-style-type: none;
+}
+.header-right {
+    position: relative;
+    z-index: 200;
+    color: #fff;
+    float:left;
+}
+.header-left {
+    width: 150px;
+    float:left;
+    box-sizing: border-box !important;
+    padding-left: 0;
+    vertical-align: top;
+    height: 320px;
+    border-right: 2px solid #444343;
+}
+.header-left::after {
+    width: 2px;
+    position: absolute;
+    background-color: #444343;
+    top: 0;
+    bottom: 0;
+    left: 148px;
+    z-index: 10;
+}
+.header-left li {
+    height: 80px;
+    line-height: 80px;
+    padding-right: 16px;
+    text-align: right;
+    position: relative;
+    z-index: 100;
+    margin-right: -2px;
+    font-family: "Microsoft Yahei";
+}
+.header-left li.selected{
+    border-right: 2px solid #19acf7;
+    color: #19acf7;
+}
+.header-left li.selected a {
+    color: #19acf7 !important;
+}
+.header-left-a {
+    font-size:16px;
+    color:#fff ;
+    letter-spacing:0;
+    cursor: pointer;
+    padding: 10px 10px !important;
+    line-height: 60px !important;
+    display: inline-block;
+}
+.header-tal-ul {
+    width: 1050px;
+    box-sizing: border-box;
+    vertical-align: top;
+    padding-left: 0;
+}
+.header-tal-ul li {
+    background:#292929;
+    width:320px;
+    height:68px;
+    float:left;
+    text-align: left;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-left: 28px;
+    margin-bottom: 16px;
+    font-family: "Microsoft Yahei";
+}
+.header-tal-ul li:hover {
+    opacity:0.9;
+    background:#19acf7;
+}
+.header-tal-ul li:hover a{
+    color: #fff;
+}
+.header-tal-ul li:hover span{
+    color: #fff;
+}
+.header-tal-ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.header-a-title{
+    display: block;
+    padding: 12px 20px !important;
+    line-height: initial !important;
+}
+.header-span-title {
+    font-family: "Microsoft Yahei";
+    font-size:14px;
+    color:#ffffff;
+    letter-spacing:0px;
+    text-align:left;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    position: relative;
+    padding-right: 24px;
+    display: block;
+}
+.header-a-title .header-span2-title {
+    display: block;
+    padding-top: 9px;
+    font-family: "Microsoft Yahei";
+    font-size:12px;
+    color:#909090;
+    letter-spacing:0px;
+    text-align:left;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.header-new:after {
+    content: 'new';
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    -ms-transform: scale(.8, .8);
+    -webkit-transform: scale(.8, .8);
+    transform: scale(.8, .8);
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    color: #fff;
+    font-size: 10px;
+    background-color: #e04646;
+    border-radius: 2px;
+    line-height: 1;
+    padding: 1px 3px 3px;
+    margin-left: 3px;
+}
+.sloveMenuActive > a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    bottom: 0;
+    z-index: 11;
+    background-color: #19ACF7;
+}
+/*更多公告*/
+.main .notice {
+    width: 1200px;
+    height: 31px;
+    margin: 20px auto;
+    /*position: relative;*/
+    /*top: -295px;*/
+}
+.main .notice .new-notice {
+    font-size: 14px;
+    color: white;
+    padding: 1px 8px;
+    background-color: #FA991B;
+    float: left;
+}
+.main .notice ul {
+    width: 1100px;
+    float: left;
+    padding-left: 20px;
+}
+.main .notice ul li {
+    float: left;
+    margin-right: 100px;
+}
+.main .notice ul li span {
+    color: #9A9A9A;
+}
+.main .notice ul li:last-child {
+    float: right;
+    margin-right: 0;
+}
+.main .notice ul li:last-child a{
+    color: #9A9A9A;
+}
+.main .notice ul li a {
+    font-size: 14px;
+}
+.main .notice .list-first {
+    position: relative;
+}
+.main .notice .list-first::after {
+    display: inline-block;
+    content: 'new';
+    color: white;
+    position: absolute;
+    font-size: 10px;
+    right: -30px;
+    top: -3px;
+    padding: 0 2px 2px;
+    border-radius: 2px;
+}
+
+/*更多产品*/
+.main .more-product {
+    width: 1200px;
+    margin: 20px auto;
+    /*position: relative;*/
+    /*top: -295px;*/
+}
+.main .more-product a{
+    display: block;
+    width: 200px;
+    padding: 29px 16px;
+    text-align: center;
+    float: left;
+    height: 240px;
+    margin: 0 50px 10px 0;
+    border: 1px solid #E7E7E7;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.main .more-product a:last-child {
+    margin-right: 0;
+}
+.main .more-product a .product-img {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    border: 3px solid transparent;
+    margin: 0;
+    border-radius: 100%;
+}
+.more-product a .product-img img {
+    width: 100%;
+    height: 100%;
+}
+.more-product a .link {
+  display: block !important;
+    color: #FFFFFF;
+    display: none;
+    padding: 6px 20px;
+    background-color: #05A6F3;
+    margin: 35px auto;
+    font-size: 14px;
+    line-height: 25px;
+    border-radius: 5px;
+}
+.more-product a h3 {
+    line-height: 25px;
+    font-size: 18px;
+    color: #3D3D3D;
+    padding: 22px 0 7px;
+    font-weight: normal;
+}
+.more-product a span {
+    color: #9A9A9A;
+    font-size: 12px;
+    line-height: 17px;
+    height: 34px;
+    overflow: hidden;
+}
+.more-product a:last-child {
+    position: relative;
+}
+.more-product a:last-child .hand{
+    width: 67px;
+    height: 67px;
+    color: #FFFFFF;
+    position: absolute;
+    transform: rotateZ(-315deg);
+    top: 9px;
+    right: 9px;
+    font-size: 12px;
+    line-height: 17px;
+}
+.more-product a:last-child .back-img {
+    width: 67px;
+    height: 67px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.more-product a:last-child .back-img img {
+    width: 67px;
+    height: 67px;
+}
+.main .more-product-bottom {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    /*position: relative;*/
+    /*top: -295px;*/
+}
+.main .more-product-bottom a {
+    color: #0ae;
+    cursor: pointer;
+}
+.main .question {
+    width: 1200px;
+    margin: 40px auto 30px auto;
+    text-align: center;
+    /*position: relative;*/
+    /*top: -295px;*/
+}
+.main .question img{
+    width: 1090px;
+    height: 315px;
+}
+.bottom {
+    width: 100%;
+}
+.bottom .bottom-content {
+    width: 100%;
+    /*position: relative;*/
+    /*top: -295px;*/
+}
+.bottom .bottom-content a {
+    color: #B7B7B7;
+}
+.bottom .bottom-content a:hover {
+    border-bottom: 1px solid #B7B7B7;
+}
+.bottom .bottom-content .first-line,.bottom .bottom-content .second-line {
+    width: 100%;
+    text-align: center;
+    line-height: 2.4;
+    font-size: 12px;
+    color: #B7B7B7;
+}
+.bottom .bottom-content .first-line {
+    padding-top: 30px;
+    border-top: 1px solid #B7B7B7;
+}
+.bottom .bottom-content .second-line {
+    margin-top: 10px;
+}
+.bottom .bottom-content .first-line li,.bottom .bottom-content .second-line li {
+    display: inline-block;
+}
+.bottom .bottom-content .first-line li + li::before,.bottom .bottom-content .second-line  li + li::before {
+    content: '|';
+    display: inline-block;
+    padding: 0 12px;
+}
+.bottom .bottom-content span {
+    font-size: 12px;
+    color: #B7B7B7;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+.bottom-content div {
+    text-align: center;
+    color: #eeefef;
+    font-size: 12px;
+    line-height: 2.4;
+    margin-bottom: 5px;
+}
+.cartoon {
+    top: 228px;
+    right: 0;
+    display: inline;
+    position: fixed;
+    z-index: 700;
+}
+.cartoon a {
+    position: relative;
+    display: inline-block;
+}
+
+.cartoon a img {
+    width: 100px;
+    height: 100px;
+}
+.cartoon a span {
+    position: absolute;
+    right: 5px;
+    top: -12px;
+    font-size: 20px;
+    background: #eee;
+    padding: 1px 2px;
+    border-radius: 3px;
+    line-height: normal;
+    color: #AC593F;
+    display: block;
+    cursor: pointer;
+}
+.place-holder {
+    background-color: pink;
+
+}

@@ -1,0 +1,1129 @@
+
+/*顶部包裹DIV*/
+#jf-top {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 550px;
+
+}
+
+/*-----顶部搜索栏-----*/
+
+/*最外层DIV*/
+#top-select {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgba(6,16,36,.2);
+    z-index: 9999;
+    box-sizing: content-box;
+}
+
+/*第二层div*/
+.top-select-content {
+    width: 1240px;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+
+/*包裹着导航栏UL的div*/
+.top-select-hear {
+    /*margin-left: 190px;*/
+    line-height: 50px;
+}
+
+/*左边的ul*/
+.top-left {
+    display: inline-block;
+}
+
+.top-left-first {
+    padding-left: 0 !important;
+}
+/*ul里面的列表*/
+.top-list-menu{
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    vertical-align: middle;
+    padding: 0 18px;
+    font-size: 15px;
+}
+/*搜索栏的鼠标进入动作*/
+.list-hover a:hover{
+    color: #00aaee;
+}
+.list-hover:hover .hid-ul{
+    display: inline-block;
+}
+
+.list-hover:hover .rev{
+    color: white;
+    transition: 200ms;
+    transform:rotate(270deg);
+}
+
+.free-in:hover  {
+    border: 1px solid #00aaee;
+}
+
+/*搜索栏的logo*/
+
+
+/*商业合作的div*/
+.top-list-menu-text {
+    display: inline;
+    text-align: center;
+}
+
+/*包裹隐藏列表的div*/
+.hid-ul {
+    display: none;
+    position: absolute;
+    overflow: visible;
+    z-index: 111111;
+    min-width:120px;
+    text-align: left;
+    left: 0;
+    top: 50px;
+    background-color: rgba(6,16,36,0.8);
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/*设置商业合作下拉列表的宽度*/
+.hid-ul-first {
+    min-width: 175px;
+}
+
+/*设置帮助支持下拉列表的宽度*/
+.hid-ul-second {
+    min-width: 155px;
+    left: 35px;
+}
+
+
+/*帮助支持的列表最下面的属性*/
+.hid-ul-second-ul li{
+    position: relative;
+    top: -20px;
+    font-size: 14px !important;
+    color: #555 !important;
+    height: 14px;
+    margin-bottom: 5px;
+}
+
+/*客服电话上面的横杆*/
+.husl-first::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #555;
+    position: absolute;
+    top: 20px;
+    display: block;
+}
+
+
+.hid-ul li {
+    color: #fff;
+    font-size: 15px;
+}
+
+/*右侧ul*/
+.hid-ul-r {
+    width: 370px;
+    position: absolute;
+    right: 8px;
+    top: 0;
+}
+.hid-ul-r li{
+    color: #fff;
+    font-size: 16px;
+}
+/*管理中心*/
+.min-center {
+    position: relative;
+    top: 1px;
+}
+/*免费入住*/
+.free-in {
+    width: 80px;
+    height: 30px;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    line-height: 28px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    padding-right: 2px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-left: 0 !important;
+}
+
+.top-select-hear .top-list {
+    display: inline-block;
+}
+.top-select-hear .top-left>li {
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+}
+
+.top-left-logo{
+    line-height: 50px;
+    float: left;
+    width: 170px;
+}
+
+.top-list-menu-r {
+    float: left;
+    padding-left: 10px;
+}
+
+/*放大镜属性以及点击事件*/
+.nav-search-input {
+    height: 30px;
+    position: relative;
+    top: 10px;
+    right: 25px;
+ }
+
+/*放大镜*/
+.mir {
+    width: 14px;
+    height: 15px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.nav-search-input input{
+    background: #394662;
+    width: 251px;
+    height: 30px;
+    opacity: 1;
+    padding-left: 30px;
+    color: white;
+    outline: none;
+    display: none;
+}
+
+
+
+
+/*------------导航栏进去动作-----------------*/
+#top-select:hover{
+    background-color: rgba(6,16,36,1);
+}
+
+/*--------------顶部背景图片---------*/
+#jf-top .bg {
+
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 550px;
+}
+
+#jf-top .bg li{
+    position: absolute;
+    width: 100%;
+    display: none;
+}
+
+#jf-top .bg .bg_current{
+    display: block;.bg li
+}
+
+#jf-top .bg li img{
+    width: 100%;
+    height: 550px;
+}
+
+/*切图圆点*/
+#jf-top .circle {
+    position: relative;
+    top: 440px;
+    left: 50%;
+    margin-left: -80px;
+    width: 1200px;
+    list-style: circle;
+    z-index: 11111;
+}
+
+#jf-top .circle li {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    float: left;
+    text-align: center;
+    margin-left: 10px;
+    background-color: #8193A8;
+
+}
+#jf-top .circle .cir_current {
+    background-color: #ccc;
+}
+
+
+/*------轮播图底部新闻--------*/
+#top-btm {
+    width: 1240px;
+    margin: 0 auto;
+    position: relative;
+    top: 445px;
+    z-index: 1111;
+}
+
+#top-btm .clearfix {
+    height: 36px;
+}
+
+#top-btm .clearfix img {
+    float: left;
+    margin-right: 10px;
+}
+#top-btm .clearfix .new {
+    position: absolute;
+    width: 27px;
+    height: 19px;
+    background: url(../images/new.png) no-repeat right center;
+    background-size: 27px 17px;
+    z-index: 11111;
+    /*padding-right: 50px;*/
+}
+#top-btm .clearfix li {
+    box-sizing: content-box;
+    float: left;
+    width: 234px;
+    color: #ccc;
+    font-size: 14px;
+    padding-right: 80px;
+}
+
+#top-btm .clearfix li:nth-child(n+3){
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+#top-btm .clearfix li:nth-last-child(1){
+    text-align: right;
+    padding: 0 0 0 20px;
+}
+#top-btm .clearfix li span {
+    color: white !important;
+}
+/*-------底部新闻鼠标移入------*/
+#top-btm .clearfix li a:hover {
+    color: #00aaee;
+}
+
+/*---------------------商业合作---------------------*/
+#payment-content {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+
+#payment-content #pc-content{
+    padding: 36px 0 50px 0;
+    position: relative;
+}
+
+
+
+/*------商业合作下方两侧样式--------*/
+#payment-list{
+    width: 1240px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+#payment-list #payment-list-left {
+    float: left;
+}
+#payment-list #pyl-top{
+    width: 600px;
+    height: 140px;
+    padding: 0 20px;
+    background: url(../images/zftghz.png) no-repeat;
+    background-size: 600px 140px;
+}
+#payment-list .py-bottom {
+    overflow: hidden;
+    padding: 50px 0 20px 40px;
+    text-align: center;
+    box-shadow: 0 0 7px #ccc;
+}
+#payment-list-right,#payment-list-left {
+    border: 1px solid transparent;
+}
+#payment-list-right {
+    float: left;
+    margin-left: 35px;
+}
+
+#payment-list .py-bottom .pl-item-li {
+    margin-right: 40px;
+    float: left;
+}
+
+/*商业合作两侧的公用属性*/
+#payment-list .payment-item-header span {
+    display: block;
+    font-size: 32px;
+    color: #FFFFFF;
+    padding-top: 30px;
+}
+
+#payment-list .payment-item-header p{
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+#payment-list .pl-item-li a {
+    display: block;
+}
+#payment-list .pl-item-border{
+    width: 68px;
+    height: 68px;
+    border: 1px solid rgba(16,142,233,.3);
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 16px;
+    margin: 0 auto;
+}
+#payment-list .pl-item-border img {
+    width: 36px;
+    height: 36px;
+}
+
+#payment-list .pl-item-li p {
+    font-size: 16px;
+    color: #1A1A1A;
+    padding: 10px 0 20px 0;
+}
+
+#payment-list .pm-item-btn {
+    width: 518px;
+    margin-top: 19px;
+}
+#payment-list .pm-item-btn a {
+    font-size: 16px;
+    color: #38425C;
+    display: inline-block;
+    padding: 10px 45px 10px 30px;
+    border: 1px solid transparent;
+    position: relative;
+    border-radius: 4px;
+}
+#payment-list .pm-item-btn a::after{
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    width: 13px;
+    height: 8px;
+    background: url(../images/xjt.png) no-repeat;
+    background-size: 100%;
+}
+
+/*右侧*/
+#payment-list-right {
+    float: left;
+}
+
+#payment-list-right #pyr-top{
+    width: 600px;
+    height: 140px;
+    padding: 0 20px;
+    background: url(../images/hyhz.png) no-repeat;
+    background-size: 600px 140px;
+}
+
+/*商业合作鼠标进入动作*/
+#payment-list-left:hover,#payment-list-left:hover .pm-item-btn a{
+    border: 1px solid #008FEA;
+}
+#payment-list-right:hover,#payment-list-right:hover .pm-item-btn a{
+    border: 1px solid #008FEA;
+}
+.py-bottom ul li :hover p{
+    color: #008FEA !important;
+}
+.py-bottom ul li :hover .pl-item-border{
+    border: 1px solid #008FEA !important;
+}
+
+/*------------快速开发---------------*/
+
+.joinmode-content {
+    width: 100%;
+    height: 582px;
+    margin: 0 auto;
+    background: url("../images/kuaisukaifa.png") no-repeat top center;
+}
+
+#jc-title{
+    padding-top: 20px ;
+    padding-bottom: 60px;
+}
+
+.jc-btm{
+    position: relative;
+    left: 10px;
+    width: 1280px;
+    margin: 0 auto;
+    padding-bottom: 125px;
+    display: table;
+    border-spacing: 10px 0;
+    border-collapse: separate;
+}
+.jc-model {
+    width: 1280px;
+    height: 325px;
+    overflow: hidden;
+    text-align: center;
+    display: table-row;
+    border-collapse: separate;
+    border-spacing: 0 0;
+}
+
+.jc-model li{
+    width: 33%;
+    display: table-cell;
+    position: relative;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.1);
+    padding-right: 10px;
+    overflow: hidden;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    background: #FFFFFF;
+}
+.jc-model li:last-child{
+    padding-right: 0;
+}
+.jc-move {
+    position: relative;
+}
+.jc-model li img {
+    width: 84px;
+    height: 84px;
+    margin-top: 68px;
+}
+.jc-model li span{
+    display: block;
+    font-size: 24px;
+    color: #000000;
+    line-height: 1;
+    padding: 20px 0 5px 0;
+}
+
+.jc-model li p {
+    font-size: 14px;
+    color: #888888;
+    padding: 15px 20px;
+}
+/*隐藏的查看详情*/
+
+.jc-hid a {
+    display: inline-block;
+    padding: 10px 60px 10px 48px;
+    font-size: 16px;
+    color: #1A1A1A;
+    text-align: center;
+    border: 1px solid rgba(26,26,26,0.20);
+    border-radius: 4px;
+    position: relative;
+    top: 44px;
+}
+
+.jc-hid a::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 34px;
+    width: 13px;
+    height: 8px;
+    background: url(../images/xjt.png) no-repeat;
+    background-size: 100%;
+}
+
+.jc-model li:hover,.jc-model li:hover .jc-hid a{
+    border: 1px solid #008FEA;
+}
+
+/*-------------开放能力--------------*/
+
+#cc-title {
+    padding: 36px 0 50px 0;
+}
+
+.chooseus-content {
+    width: 100%;
+}
+.chooseus-slick-map {
+    max-width: 1920px;
+    padding: 70px 0px 0 0px;
+    margin: 0 auto 60px;
+    position: relative;
+    background: url(../images/kaifangnengli.png) no-repeat top center;
+}
+
+.chooseus-ul {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.chooseus-li {
+    width: 310px;
+    height: 310px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.chooseus-concent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    padding-top: 50px;
+}
+
+.chooseus-item-icon {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+
+.chooseus-item-title {
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+.chooseus-item-tips {
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 0 90px;
+    line-height: 24px;
+}
+
+.chooseus-li .chooseus-item-hover {
+    position: absolute;
+    top: 0;
+    left: -310px;
+    z-index: 100;
+    width: 310px;
+    height: 310px;
+    background: rgba(33,121,255,0.8);
+    display: none;
+}
+
+.chooseus-item-hover a {
+    display: block;
+    width: 310px;
+    height: 310px;
+    text-align: left;
+    padding: 35px 35px 0 35px;
+}
+
+.chooseus-hover-title {
+    width: 240px;
+    font-size: 32px;
+    color: #FFFFFF;
+    position: relative;
+    /*top: 20px;*/
+    left: 35px;
+    text-align: left;
+    margin: 20px 0;
+}
+.chooseus-hover-title:after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    bottom: -10px;
+    left: 32px;
+    margin-left: -32px;
+    background-color: #FFBD00;
+    display: block;
+}
+.chooseus-hover-tips {
+    position: relative;
+    left: 35px;
+    text-align: left;
+    width: 240px;
+    opacity: 0.5;
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 24px;
+}
+
+.chooseus-hover-detailsbtn {
+    position: relative;
+    left: 35px;
+    text-align: left;
+    padding-top: 10px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.chooseus-data {
+    width: 1240px;
+    margin: 0 auto;
+    padding-top: 130px;
+    text-align: center;
+}
+
+.chooseus-indata {
+    display: inline-block;
+    text-align: left;
+}
+
+.chooseus-data .chooseus-data-item {
+    width: 413.33px;
+    float: left;
+    padding-left: 50px;
+}
+
+.chooseus-data-tips {
+    font-size: 14px;
+    color: #000000;
+    margin-top: 5px;
+}
+
+.chooseus-data-bgtitle {
+    font-size: 26px;
+    color: #E79700;
+}
+
+.chooseus-data-smtitle {
+    font-size: 18px;
+    color: #E79700;
+}
+
+/*--------------合作伙伴--------------*/
+.entersteps-content {
+    height: 510px;
+}
+
+.entersteps-content-inner {
+    max-width: 1920px;
+    height: 510px;
+    margin: 0 auto;
+    text-align: center;
+    background: url(../images/hezuohuoban.png) no-repeat top center;
+}
+
+.homepage-title {
+    padding: 36px 0 50px 0;
+}
+/*列表*/
+.entersteps-list{
+
+    position: relative;
+    max-height: 160px;
+}
+
+.entersteps-ul{
+    display: inline-block;
+    text-align: left;
+}
+
+.entersteps-li {
+    float: left;
+    width: 225px;
+    margin-right: 198px;
+    position: relative;
+    color: white;
+}
+
+.entersteps-li-three {
+    margin: 0;
+}
+
+.entersteps-li-one::after,.entersteps-li-two ::after {
+    content: '';
+    width: 96px;
+    height: 4px;
+    position: absolute;
+    top: 55px;
+    right: -152px;
+    background: url("../images/shengluehao.png") no-repeat ;
+    background-size: 100% 100%;
+}
+
+/*列表中文字*/
+.entersteps-list-num {
+    font-size: 42px;
+    color: #FFFFFF;
+}
+
+.entersteps-list-con {
+    font-size: 28px;
+    color: #FFFFFF;
+}
+
+.entersteps-list-tips {
+    font-size: 14px;
+    color: #FFFFFF;
+    max-height: 130px;
+    overflow: hidden;
+    line-height: 20px;
+}
+
+.entersteps-list-register a{
+    color: #00A0ED;
+    font-size: 14px;
+    display: inline-block;
+    float: left;
+    padding: 0 13px;
+}
+.entersteps-list-register .clr-a {
+    border-right: 1px solid #00A0ED;
+    padding-left: 0;
+}
+
+.entersteps-btn{
+    padding-top: 65px;
+}
+
+.entersteps-btn a {
+    display: inline-block;
+    width: 280px;
+    height: 50px;
+    border-radius: 4px;
+    background: #108EE9;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+/*----底部文字鼠标移入事件*/
+
+.footer-box-content-subli a:hover{
+    color: #108EE9;
+}
+
+/*-----合作伙伴鼠标移入动作*/
+.entersteps-btn a:hover {
+    background: #009BDD;
+}
+
+
+
+
+
+
+
+
+/*-----------------尾部---------------------*/
+
+
+/*尾部的左边*/
+.footer-box {
+    width: 100%;
+    height: 329px;
+    background-color: #272E42;
+}
+.footer-box-content {
+    width: 1240px;
+    margin: 0 auto;
+    padding: 50px 0px 30px;
+}
+.footer-box-left {
+    width: 1024px;
+    float: left;
+    border-right: 1px solid #555;
+}
+
+.footer-box-content-li{
+    width: 25%;
+    float: left;
+}
+.footer-box-content-name {
+    font-size: 22px;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+}
+.footer-box-content-subli {
+    padding-top: 14px;
+    white-space: normal;
+    word-break: break-all;
+}
+.footer-box-content-subli a , .footer-box-content-subli span {
+    font-size: 16px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+/*尾部的右边*/
+
+.footer-box-right {
+    float: left;
+    padding-left: 70px;
+}
+.footer-box-right-title {
+    font-size: 22px;
+    color: #FFFFFF;
+    padding-bottom: 25px;
+}
+
+.footer-box-right-item img {
+    width: 97px;
+    height: 97px;
+}
+
+.footer-box-right-item-opacity {
+    font-size: 14px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+.footer-box-right-item {
+    margin: 10px 0;
+}
+
+/*尾部的下面*/
+
+
+.copyright-word {
+    height: 30px;
+    font-size: 10px;
+    text-align: center;
+    opacity: 0.8;
+    color: #fff;
+    position: relative;
+    top: 20px;
+}
+.server {
+    color: #232940;
+}
+
+/*----尾部鼠标移入事件------*/
+
+
+
+
+
+/*-----------右下角小动物-------------*/
+.animal {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.animal img {
+    width: 100px;
+    height: 100px;
+}
+.animal span {
+    position: absolute;
+    right: 5px;
+    top: -12px;
+    font-size: 14px;
+    background: #eee;
+    padding: 1px 2px;
+    border-radius: 3px;
+    font-family: simsun;
+    line-height: normal;
+    color: #AC593F;
+}
+
+
+/*----------------顶部扫码登陆模块-----------------*/
+
+.login-model {
+    float: right;
+    z-index: 99999;
+    width: 285px;
+    height: 295px;
+    background-color: rgba(0,0,0,.4);
+    border-radius: 5px;
+    position: absolute;
+    top: 148px;
+    right: 75px;
+}
+
+.login-target{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    display: block;
+    top: 0;
+    right: 0;
+    background-image: url(../images/cbsm.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 101;
+}
+
+.checked {
+    background-position: -201px -199px;
+}
+
+#use-for-help {
+    position: absolute;
+    left: 76px;
+    width: 151px;
+    height: 128px;
+    background-position: 0 -328px;
+    display: none;
+}
+
+.login-form-code {
+    width: 220px;
+    height: 293px;
+    margin: 0 auto;
+}
+
+.login-word p{
+    width: 100%;
+    padding: 26px 0 16px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+.ui-form-item {
+    margin-bottom: 10px;
+    zoom: 1;
+    position: relative;
+}
+
+.icon {
+    display: inline-block;
+    width: 39px;
+    height: 38px;
+    display: block;
+    overflow: hidden;
+    background-color: #aaabab;
+    text-align: center;
+    line-height: 38px;
+    float: left;
+    position: relative;
+}
+.icon img {
+    margin: 7px auto 0;
+    width: 24px;
+    height: 24px;
+}
+
+.forget-password {
+    padding-top: 4px;
+    position: relative;
+}
+.forget-password a{
+    font-size: 12px;
+    color: #fff;
+    zoom: 1;
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+.login-btm {
+    padding: 0 0 28px;
+    zoom: 1;
+    position: relative;
+    top: 30px;
+}
+
+.login-btm .login-btm-button {
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    width: 219px;
+    padding:20px;
+    font-size: 18px;
+    height: 40px;
+    line-height: 0;
+    color: #fff;
+    font-weight: 400;
+    background: #0AE;
+    border-radius: 5px;
+    letter-spacing: 8px;
+}
+
+.ui-form-other{
+    position: relative;
+    line-height: 18px;
+    padding-top: 7px;
+    height: 18px;
+    zoom: 1;
+}
+
+.ui-form-other .textlink {
+    color: #fff;
+    zoom: 1;
+    font-size: 12px;
+}
+
+.ui-form-other .register {
+    position: absolute;
+    right: 0;
+    top: 7px;
+    font-size: 12px;
+    color: #0AE;
+}
+
+.search-form-code {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+.search-form-code .login-word {
+    width: 100%;
+}
+.qrcode-detail {
+    height: 124px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.use-phone {
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 13px;
+}
+
+.qrcode-footer-help {
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.qrcode-footer-help a {
+    color: #fff;
+    zoom: 1;
+    font-size: 12px;
+}
+
+.qrcode-footer-help em {
+    padding: 0 10px;
+    color: #fff;
+    opacity: .72;
+    zoom: 1;
+    font-style: normal;
+}
+
+.login a:hover{
+    text-decoration: underline;
+}

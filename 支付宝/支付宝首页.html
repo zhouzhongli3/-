@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>支付宝 知托付!</title>
+    <!--设置网页上面那个图标-->
+    <link rel="icon" href="images/favicon.ico">
+    <style>
+    </style>
+    <script src="js/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <!--<link rel="stylesheet" href="css/comm.css">-->
+</head>
+<body>
+<div class="main">
+    <div id="main">
+        <div class="header">
+            <div class="nav">
+                <div class="slogan"></div>
+                <div class="enter">
+                    <span class="status">我已经有支付宝账号</span>
+                    <a href="javascript:;">快速登录</a>
+                </div>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="nav">
+                <div class="slogan1"></div>
+                <div class="mid_nav">
+                    <a href="javascript:;" class="title_partner clearfix">
+                        <span class="title titles">我是合作伙伴</span>
+                    </a>
+                    <a href="javascript:" class="title_business clearfix">
+                        <span class="title titles business1">我是商家用户
+                        <i></i></span>
+                        <div class="two_business">
+                        <span class="title business2">我是支付宝商家</span>
+                        <span class="title business3">我是口碑商家</span>
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="title_private  clearfix">
+                        <span class="title titles  pri">我是个人用户</span>
+                    </a>
+                </div>
+            </div>
+            <div class="back">
+                <div class="item back1 active"></div>
+                <div class="item back2"></div>
+                <div class="item back3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="btm_top">
+            <ul>
+                <li><a href="javascript:;">蚂蚁金服集团 </a></li>
+                <li>|</li>
+                <li><a href="javascript:;"> 支付宝</a></li>
+                <li>|</li>
+                <li><a href="javascript:;"> 余额宝</a></li>
+                <li>|</li>
+                <li><a href="javascript:;">招财猫 </a></li>
+                <li>|</li>
+                <li><a href="javascript:;"> 蚂蚁商家中心</a></li>
+                <li>|</li>
+                <li><a href="javascript:;"> 芝麻信用</a></li>
+                <li>|</li>
+                <li><a href="javascript:;">蚂蚁微贷 </a></li>
+                <li>|</li>
+                <li><a href="javascript:;">网商银行 </a></li>
+                <li>|</li>
+                <li><a href="javascript:;"> 开放平台</a></li>
+                <li>|</li>
+                <li><a href="javascript:;">诚征英才 </a></li>
+                <li>|</li>
+                <li><a href="javascript:;">联系我们 </a></li>
+                <li>|</li>
+                <li><a href="javascript:;">International Business </a></li>
+            </ul>
+        </div>
+        <div class="btm_middle">
+            <span>泸ICP15027489号</span>
+        </div>
+        <div class="btm_base">
+            <a href="javascript:;" class="pic1"></a>
+            <a href="javascript:;" class="pic2"></a>
+            <a href="javascript:;" class="pic3"></a>
+            <a href="javascript:;" class="pic4"></a>
+            <a href="javascript:;" class="pic5"></a>
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        var timer;
+        var _timer = 0;
+        var title_business=$(".title_business");
+     //   支付宝商家
+     var   business2= $(".business2");
+     var two_business=$(".two_business");
+     var business3=$(".business3");
+        //span 口碑商家 点击事件 页面跳转
+        business3.click(function () {
+$(window.location).prop('href','口碑商家.html');
+        });
+        //   支付宝商家
+        // business2.click(function () {
+        //     $(window.location).prop('href','口碑商家.html');
+        // });
+        title_business.hover(function () {
+
+            // title_business.css("display","none");
+            two_business.css("display","block");
+
+        },function () {
+            title_business.css("display","block");
+            two_business.css("display","none");
+        });
+        function autoPlay() {
+            timer = setInterval(function () {
+                _timer++;
+                console.log(_timer);
+                if (_timer <= 5) {
+                    $(".back1").addClass("active").siblings().removeClass("active");
+                }
+                else if (_timer > 5 && _timer <= 10) {
+                    $(".back2").addClass("active").siblings().removeClass("active");
+                }
+                else if (_timer > 10 && _timer <= 15) {
+                    $(".back3").addClass("active").siblings().removeClass("active");
+                }
+                if (_timer >= 15) {
+                }
+            }, 300)
+        }
+
+        autoPlay();
+
+
+
+
+
+
+    });
+</script>
+</body>
+</html>

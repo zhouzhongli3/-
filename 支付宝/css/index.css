@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 626px;
+}
+/*清除浮动*/
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /*overflow: hidden;*/
+
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    width: 100%;
+
+    /*background-color: yellow;*/
+    position: fixed;
+    top: 20px;
+    left: 0;
+    z-index: 99;
+
+}
+
+.header .nav {
+    width: 80%;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+}
+
+.header .nav .slogan {
+    float: left;
+    width: 70px;
+    height: 25px;
+    background: url("../images/TBslogan.png") no-repeat;
+    background-size: 70px;
+}
+
+.header .nav .enter {
+    float: right;
+}
+
+.header .nav .enter .status {
+    color: #bfbfbf;
+    right: 10px;
+    font-size: 12px;
+}
+
+.header .nav .enter a {
+    font-size: 12px;
+    color: #fff;
+    margin: 0 5px;
+}
+
+.header .nav .enter a:hover {
+    color: #00bbee;
+}
+
+.middle {
+    width: 100%;
+    height: 100%;
+    background-color: #ffff;
+}
+
+.middle .nav {
+    position: absolute;
+    width: 100%;
+    height: 269px;
+    /*background: #000;*/
+    text-align: center;
+    top: 25%;
+}
+
+.middle .nav .slogan1 {
+    position: absolute;
+    width: 682px;
+    height: 200px;
+    background-size: 682px;
+    background: url("../images/zfb1.png") no-repeat;
+    left: 28%;
+    z-index: 999;
+}
+
+.middle .nav .mid_nav {
+    position: absolute;
+    left: 28%;
+    bottom: 1px;
+    width: 650px;
+    height: 50px;
+    margin: 15px auto 0;
+    z-index: 999;
+}
+
+.middle .nav .mid_nav a{
+    display: block;
+    width: 188px;
+    height: 50px;
+    background: #0799DE;
+    float: left;
+    line-height: 50px;
+    margin-right: 20px;
+    border-radius: 5px;
+    z-index: 999;
+}
+
+.middle .nav .mid_nav a span {
+    z-index: 999;
+
+    display: block;
+    /*margin-left: 50px;*/
+}
+
+/*.middle .nav .mid_nav .title_partner .titles::before ,*/
+/*.middle .nav .mid_nav .business1::before,*/
+/*.middle .nav .mid_nav .title_private .pri::before{*/
+/*content: '';*/
+/*position: absolute;*/
+/*display: block;*/
+/*float: left;*/
+
+/*top: 14px;*/
+/*width: 24px;*/
+/*height: 24px;*/
+/*background-size: 24px;*/
+
+/*}*/
+/*商家*/
+.middle .nav .mid_nav .title_partner .titles::before {
+    content: '';
+    background: url("../images/TBuser1.png") no-repeat;
+    left: 35px;
+    position: absolute;
+    display: block;
+    float: left;
+    top: 14px;
+    width: 24px;
+    height: 24px;
+    background-size: 24px;
+    z-index: 999;
+
+}
+.title_business{
+    display: inline-block;
+    width: 188px;
+    height: 50px;
+}
+.title_partner .title{
+    margin-left: 50px;
+
+}
+.middle .nav .mid_nav .business1{
+    display: block;
+    /*display: none;*/
+    width: 188px;
+    height: 50px;
+    /*background: #0799DE;*/
+    float: left;
+    line-height: 50px;
+    margin-left: 25px;
+    border-radius: 5px;
+    z-index: 999;
+
+}
+.middle .nav .mid_nav .business1 i {
+
+    background: url("../images/TBuser2.png");
+    left: 240px;
+    display: inline-block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-size: 24px;
+    float: left;
+    top: 14px;
+    z-index: 999;
+
+}
+.middle .nav .mid_nav .title_private .pri{
+    margin-left: 50px;
+}
+.middle .nav .mid_nav .title_private .pri::before {
+    content: '';
+    display: inline-block;
+    background: url("../images/TBuser3.png");
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-size: 24px;
+    float: left;
+    right: 180px;
+    top: 14px;
+    z-index: 999;
+}
+.middle .nav .mid_nav .title_business  .two_business{
+    position: relative;
+    display: none;
+    /*display: inline-block;*/
+    width: 188px;
+    height: 100px;
+    background: #0799DE;
+    /*background: #000;*/
+    float: left;
+    line-height: 50px;
+    margin-right: 20px;
+    margin-top: -69px;
+    border-radius: 10px;
+    z-index: 999;
+}
+
+.middle .nav .mid_nav .title_business  .two_business .business2{
+    position: absolute;
+    color: #fff;
+    height: 49px;
+    text-align: center;
+    line-height: 50px;
+    /*border-bottom: #00dd1c;*/
+    margin-left: 1px;
+    width: 188px;
+    margin-top: 0;
+    /*background: #0799DE;*/
+    border-bottom: black;
+    z-index: 998;
+
+
+}
+.middle .nav .mid_nav .title_business  .two_business .business2::before{
+    content: '';
+    position: absolute;
+    width: 130px;
+    height: 1px;
+    background-color: #c9c9c9;
+    top: 50px;
+    right: 30px;
+}
+.middle .nav .mid_nav .title_business  .two_business  .business3 {
+color: #fff;
+    position: absolute;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    /*background: #0799DE;*/
+    width: 188px;
+    margin-left: -1px;
+    bottom: 0;
+    /*border-top: red;*/
+
+}
+
+.middle .back {
+    bottom: 70px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    /*overflow: hidden;*/
+
+    height: 550px;
+}
+
+.middle .back .back1 {
+    position: absolute;
+    background: url("../images/TB1.jpg") no-repeat 80% 80%;
+    background-size: 100%;
+    width: 100%;
+    height: 550px;
+    /*z-index: 44;*/
+    float: left;
+}
+
+.active {
+    z-index: 44;
+    animation: fa 2s;
+}
+
+@keyframes fa {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.middle .back .back2 {
+    position: absolute;
+    background: url("../images/TB2.jpg") no-repeat 80% 80%;
+    width: 100%;
+    height: 550px;
+    background-size: 100%;
+    float: left;
+
+    /*display: none;*/
+
+}
+
+.middle .back .back3 {
+    position: absolute;
+    background: url("../images/TB3.jpg") no-repeat 80% 80%;
+    width: 100%;
+    height: 550px;
+    background-size: 100%;
+    float: left;
+    /*display: none;*/
+}
+
+.bottom {
+    position: absolute;
+    height: 76px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    z-index: 990;
+    margin-left: 240px;
+}
+
+.bottom .btm_top ul li {
+    margin-top: 10px;
+    float: left;
+    padding-left: 7px;
+    font-size: 12px;
+}
+
+.bottom .btm_top ul a {
+    cursor: pointer;
+    font-size: 12px;
+    color: #666;
+}
+
+.bottom .btm_middle {
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.bottom .btm_middle {
+    color: #666;
+    font-size: 12px;
+}
+
+.bottom .btm_base {
+    width: 250px;
+    height: 30px;
+    /*margin: 3px auto;*/
+    text-align: center;
+    margin-left: 40%;
+}
+
+.bottom .btm_base a {
+    width: 20px;
+    display: inline-block;
+    float: left;
+    margin: 0 5px;
+    height: 12px;
+    background: url("../images/TBjltu.png") no-repeat;
+    text-align: center;
+}
+
+.bottom .btm_base .pic1 {
+    background-position: -2px -14px;
+    width: 16px;
+    height: 12px;
+}
+
+.bottom .btm_base .pic1:hover {
+    background-position: -1px -38px;
+    width: 16px;
+    height: 12px;
+}
+
+.bottom .btm_base .pic2 {
+    background-position: -36px -10px;
+    width: 33px;
+    height: 13px;
+}
+
+.bottom .btm_base .pic2:hover {
+    background-position: -35px -33px;
+    width: 33px;
+    height: 13px;
+}
+
+.bottom .btm_base .pic3 {
+    background-position: -77px -11px;
+    width: 27px;
+    height: 16px;
+}
+
+.bottom .btm_base .pic3:hover {
+    background-position: -77px -34px;
+    width: 27px;
+    height: 16px;
+}
+
+.bottom .btm_base .pic4 {
+    background-position: -120px -13px;
+    width: 18px;
+    height: 11px;
+}
+
+.bottom .btm_base .pic4:hover {
+    background-position: -119px -36px;
+    width: 18px;
+    height: 11px;
+}
+
+.bottom .btm_base .pic5 {
+    background-position: -204px -16px;
+    width: 11px;
+    height: 17px;
+    margin-top: 5px;
+}
+
+.bottom .btm_base .pic5:hover {
+    background-position: -204px -37px;
+    width: 11px;
+    height: 17px;
+
+}

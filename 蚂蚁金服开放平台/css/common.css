@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+/*清浮动*/
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+}
+/*顶部箭头样式*/
+.rev {
+    margin-left: 5px;
+    vertical-align: middle;
+    font-size: 18px;
+    display: inline-block;
+    transform:rotate(90deg);
+}
+
+/*顶部竖线*/
+.string {
+    font-size: 18px;
+    color: #999;
+}
+
+
+/*------轮播图文字--------*/
+.bg_word{
+    position: relative;
+    width: 1240px;
+    margin:auto;
+    top: -370px;
+    color: #fff;
+}
+
+.bg_word h2 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+.bg_word span {
+    display:block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/*板块顶部的标题*/
+.title-demo {
+    display: block;
+    position: relative;
+    font-size: 32px;
+    color: #38425C;
+    text-align: center;
+}
+.title-demo::after {
+    content: "";
+    position: absolute;
+    width: 64px;
+    height: 2px;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -32px;
+    background-color: #108EE9;
+    display: block;
+}
+
+/*-----扫码登陆输入框的统一样式*/
+.ui-form-item input {
+    box-sizing: content-box;
+    float: left;
+    position: relative;
+    padding: 9px;
+    line-height: 20px;
+    height: 20px;
+    color: #595959;
+    font-size: 12px;
+    vertical-align: middle;
+    *vertical-align: -5px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    box-shadow: none;
+    width: 162px;
+    outline: none;
+}
+

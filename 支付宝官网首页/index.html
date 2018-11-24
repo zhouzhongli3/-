@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>支付宝 支付托!</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/zfb-js.js"></script>
+</head>
+<body>
+<!--头部-->
+<div id="header">
+    <!--顶部黑色导航条-->
+    <div class="b-laymid">
+        <div class="b-top">
+            <ul class="user">
+                <li>个人</li>
+                <li>企业</li>
+                <li>合作伙伴</li>
+            </ul>
+            <div class="kefu0">
+                <a href="#">支付宝APP</a>
+                <a href="#">|</a>
+            </div>
+            <div class="kefu">
+                <a href="#" class="customer">客户服务<i class="down-i"></i>
+                    <ul class="hov">
+                        <li>服务大厅</li>
+                        <li>自助服务</li>
+                        <li>提建议</li>
+                    </ul>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--顶部白色导航条-->
+    <div class="w-laymid">
+        <div class="w-top">
+            <!--左侧logo-->
+            <img src="img/top-logo.png" class="w-logo">
+            <!--中部导航条-->
+            <ul id="money">
+                <li>首页</li>
+                <li>
+                    财富中心
+                    <div class="downList">
+                        <div class="off"><img src="img/地图找房_交叉.png" alt=""></div>
+                        <ul>
+                            <li>余额宝</li>
+                            <li>招财宝</li>
+                            <li>存金宝</li>
+                            <li>淘理财</li>
+                            <li>蚂蚁达客</li>
+                        </ul>
+                        <div class="wealth">财富中心</div>
+                    </div>
+                </li>
+                <li>
+                    安全保障
+                    <div class="downList downList-2">
+                        <div class="off"><img src="img/地图找房_交叉.png" alt=""></div>
+                        <ul>
+                            <li>安全中心</li>
+                            <li>会员保障</li>
+                        </ul>
+                        <div class="wealth">安全保障</div>
+                    </div>
+                </li>
+                <li class="li4">|</li>
+                <li>
+                    商家中心
+                    <div class="downList downList-2">
+                        <div class="off"><img src="img/地图找房_交叉.png" alt=""></div>
+                        <ul>
+                            <li>支付宝商家</li>
+                            <li>口碑商家</li>
+
+                        </ul>
+                        <div class="wealth">商家中心</div>
+                    </div>
+                </li>
+                <li>
+                    开放平台
+                </li>
+            </ul>
+            <!--右侧登录按钮-->
+            <div class="loin">
+                <a href="#" class="login">登录</a>
+                <a href="#">注册</a>
+            </div>
+        </div>
+    </div>
+</div>
+<ul id="big">
+    <!--主页 视频-->
+    <li id="index" class="floor">
+        <!--视频灰色模板-->
+        <div class="video-mask"></div>
+        <!--视频-->
+        <video muted  poster="img/poster.jpg">
+            <!--视频链接-->
+            <source src="video/index.mp4" type="video/mp4">
+        </video>
+        <!--中部登录界面+改变因为而来图片-->
+        <div class="center">
+            <!--改变因为而来图片-->
+            <div class="logo"></div>
+            <!--登录-->
+            <div class="i-loin">
+                <a href="#">登录</a>
+                <a href="#">立即注册</a>
+            </div>
+            <!--播放视频按钮-->
+            <div class="play"><img src="img/play.png" alt=""></div>
+        </div>
+        <!--右侧切换页面小圆点-->
+        <div class="list">
+            <ul>
+                <li class="current"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <!--向下切换页面按钮-->
+        <div class="next"><img src="img/next.png" alt=""></div>
+    </li>
+    <!--第一页 蓝天白云-->
+    <li id="one" class="floor">
+        <!--背景图片-->
+        <div class="one-i"></div>
+            <!--大DIV-->
+            <div id="one-1">
+                <!--文字图片-->
+                <div class="bg1"><img src="img/one-bg1.png" alt=""></div>
+                <!--人像图片-->
+                <div class="bg2"><img src="img/one-bg2.png" alt=""></div>
+                <!--白云-->
+                <div class="bg3"><img src="img/one-by1.png" alt=""></div>
+                <!--白云-->
+                <div class="bg4"><img src="img/one-by2.png" alt=""></div>
+                <!--白云-->
+                <div class="bg5"><img src="img/one-by3.png" alt=""></div>
+                <!--白云-->
+                <div class="bg6"><img src="img/one-by4.png" alt=""></div>
+                <!--底部黑色短语-->
+                <div class="ftbar">
+                    <!--设置居中-->
+                    <div class="ft-content">
+                        <!--设置顶部间距-->
+                        <div class="products">
+                            <!--每一个块-->
+                            <div class="zzfk product">
+                                <img src="img/zzfk.png" alt="">
+                                <div class="tips">
+                                    <p>转账付款</p>
+                                    <span>转到支付宝账户，瞬间到账 | 转到银行卡，2小时到账</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </li>
+    <!--第二页 手机支付-->
+    <li id="two" class="floor">
+        <!--扫码机-->
+        <div class="bg1"><img src="img/two-1.png" alt=""></div>
+        <!--手机-->
+        <div class="bg2"><img src="img/two-2.png" alt=""></div>
+        <!--文字-->
+        <div class="bg3"><img src="img/two-3.png" alt=""></div>
+        <!--底部黑色短语-->
+        <div class="ftbar">
+            <!--设置居中-->
+            <div class="ft-content">
+                <!--设置顶部间距-->
+                <div class="products">
+                    <!--依次每一个块-->
+                    <div class="fkmfk fkmfk1 product">
+                        <img src="img/sao.png">
+                        <div class="tips">
+                            <p>扫描二维码或条码付款</p>
+                            <span>自动识别不安全链接，安心付款</span>
+                        </div>
+                    </div>
+                    <div class="fkmfk fkmfk2 product">
+                        <img src="img/fukuanma.png">
+                        <div class="tips">
+                            <p>出示付款码付款</p>
+                            <span>付款码每次不同，保障付款安全</span>
+                        </div>
+                    </div>
+                    <div class="fkmfk fkmfk3 product">
+                        <img src="img/xinhao.png">
+                        <div class="tips">
+                            <p>通过声波收付款</p>
+                            <span>没有网络也能收款付款</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <!--第三页 美女范儿-->
+    <li id="three" class="floor">
+        <!--背景图片-->
+        <div class="big-i"></div>
+        <!--文字-->
+        <div class="bg1">
+            <img src="img/three-1.png" alt="">
+        </div>
+        <!--底部黑色短语-->
+        <div class="ftbar">
+            <!--设置居中-->
+            <div class="ft-content">
+                <!--设置顶部间距-->
+                <div class="products">
+                    <!--依次每一个块-->
+                    <div class="fkmfk fkmfk1 product">
+                        <img src="img/diqiu.png">
+                        <div class="tips">
+                            <p>国际运输</p>
+                            <span>如淘宝购物般简单，无需办理转运</span>
+                        </div>
+                    </div>
+                    <div class="fkmfk fkmfk2 product">
+                        <img src="img/zheng.png">
+                        <div class="tips">
+                            <p>品牌正品</p>
+                            <span>海外商家直发，100%正品保证</span>
+                        </div>
+                    </div>
+                    <div class="fkmfk fkmfk3 product">
+                        <img src="img/diqiuyipng.png">
+                        <div class="tips">
+                            <p>人民币付款</p>
+                            <span>无需外币兑换费，无需双币种信用卡</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <!--第四页 看电影理财-->
+    <li id="four" class="floor">
+        <!--背景图片-->
+        <div class="four-bg"></div>
+        <!--背景黑色模板-->
+        <div class="four-mask"></div>
+        <!--文字-->
+        <div class="bg1">
+            <img src="img/four1.png" alt="">
+        </div>
+        <!--底部黑色短语-->
+        <div class="ftbar">
+            <!--设置居中-->
+            <div class="ft-content">
+                <!--设置顶部间距-->
+                <div class="products">
+                    <!--依次每一个块-->
+                    <div class="fkmfk fkmfk1 product">
+                        <img src="img/money.png">
+                        <div class="tips">
+                            <p>赚的更多</p>
+                            <span>定期稳定收益，让你赚更多</span>
+                        </div>
+                    </div>
+                    <div class="fkmfk fkmfk2 product">
+                        <img src="img/baozhang.png">
+                        <div class="tips">
+                            <p>安全保障</p>
+                            <span>权威金融机构负责风险管理</span>
+                        </div>
+                    </div>
+                    <div class="fkmfk fkmfk3 product">
+                        <img src="img/dianji.png">
+                        <div class="tips">
+                            <p>买的方便</p>
+                            <span>一键购买，坐享收益</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <!--第五页 医院不排队-->
+    <li id="five" class="floor">
+        <!--背景图片-->
+        <div class="five-bg"></div>
+        <!--文字-->
+        <div class="bg1">
+            <img src="img/five1.png" alt="">
+        </div>
+        <!--底部黑色短语-->
+        <div class="ftbar">
+            <!--设置居中-->
+            <div class="ft-content">
+                <!--设置顶部间距-->
+                <div class="products">
+                    <!--依次每一个块-->
+                    <div class="fkmfk w4 product">
+                        <img src="img/yiyuan.png">
+                        <div class="tips">
+                            <p>挂号</p>
+                            <span>余号查询，足不出户就能挂号</span>
+                        </div>
+                    </div>
+                    <div class="fkmfk w4 product">
+                        <img src="img/zhineng.png">
+                        <div class="tips">
+                            <p>智能导诊</p>
+                            <span>叫号与导航，按时到达科室不迷路</span>
+                        </div>
+                    </div>
+                    <div class="fkmfk w4 product">
+                        <img src="img/yaoping.png">
+                        <div class="tips">
+                            <p>付医药费</p>
+                            <span>手机支付，各类医药费边走边付</span>
+                        </div>
+                    </div>
+                    <div class="fkmfk w4 product">
+                        <img src="img/baogao.png">
+                        <div class="tips">
+                            <p>查看报告</p>
+                            <span>消息通知，随时查看就诊报告</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <!--底部说明-->
+    <li id="foot" class="floor">
+        <!--上面白色块-->
+        <div class="am-part-white">
+            <!--居中模块-->
+            <div class="happy-life ">
+                <!--黑线上面依次四个介绍模块-->
+                <div class="youcans clearfix">
+                    <ul>
+                        <li class="youcan">
+                            <img src="img/chabei.png" alt="">
+                            <span>付款，是件容易的事</span>
+                            <div>
+                                <a>付款方式</a>
+                                <span class="separate">|</span>
+                                <a>134 家金融机构</a>
+                            </div>
+                        </li>
+                        <li class="youcan">
+                            <img src="img/bao.png" alt="">
+                            <span>会员保障，安心付款</span>
+                            <div>
+                                <a href="#">安全升级</a>
+                                <span class="separate">|</span>
+                                <a href="#">应急服务 </a>
+                                <span class="separate">|</span>
+                                <a href="#">理赔服务</a>
+                            </div>
+                        </li>
+                        <li class="youcan">
+                            <img src="img/diqiu2.png" alt="">
+                            <span>海外商品、想购就购</span>
+                            <div>
+                                <a>全球直购</a>
+                                <span class="separate">|</span>
+                                <a>海外直邮</a>
+                            </div>
+                        </li>
+                        <li class="youcan">
+                            <img src="img/fengche.png" alt="">
+                            <span>玩转支付宝</span>
+                            <div>
+                                <a>如何购物</a>
+                                <span class="separate">|</span>
+                                <a>新手须知</a>
+                                <span class="separate">|</span>
+                                <a>我要开店</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--黑线下面依次四个说明模块-->
+                <div class="filed">
+                    <ul>
+                        <li class="block block1">
+                            <div class="b-one">
+                                <a class="bottom">支付宝收费规则</a>
+                                <span class="separate">|</span>
+                                <a class="bottom">支付宝服务协议</a>
+                            </div>
+                            <div class="b-two">
+                                <a class="bottom">支付宝隐私权政策</a>
+                                <span class="separate">|</span>
+                                <a class="bottom">蚂蚁金服客户权益保障承诺书</a>
+                            </div>
+                            <div class="notice">
+                                <span>公告</span><a href="#">支付宝服务协议的更新公告</a>
+                                <a href="#" class="two">《关于防范和打击电信网络诈骗犯罪的通告》</a>
+                            </div>
+                        </li>
+                        <li class="block block2">
+                            <span>支付宝官方微博</span>
+                            <span class="concern">+关注</span></li>
+                        <li class="block block3">
+                            <span>下载支付宝</span>
+                            <img src="img/bottom-erweima.jpg" alt="" class="erweima">
+                        </li>
+                        <li class="block block4">
+                            <h4>支付宝E公益</h4>
+                            <p>帮助听力智障儿童，献爱心。</p>
+                            <a href="#">立即查看</a>
+                            <img src="img/aixin.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--下面黑色部分-->
+        <div class="am-part-black">
+            <!--居中模块-->
+            <div class="happy-life">
+                <!--联系我们-->
+                <ul>
+                    <li class="links">
+                        <a href="#">诚征英才</a>
+                        <a href="#">联系我们</a>
+                        <span>Business沪ICP备15027489号</span>
+                    </li>
+                    <!--旗下金融集团-->
+                    <li class="links links1">
+                        <a href="#">蚂蚁金服集团</a>
+                        <a href="#">支付宝</a>
+                        <a href="#">余额宝</a>
+                        <a href="#">招财宝</a>
+                        <a href="#">芝麻信用</a>
+                        <a href="#">蚂蚁微贷</a>
+                        <a href="#">网商银行</a>
+                        <span>蚂蚁达客</span>
+                    </li>
+                    <!--旗下其他产业-->
+                    <li class="links links2">
+                        <a href="#">阿里里巴巴集团</a>
+                        <a href="#">淘宝网</a>
+                        <a href="#">天猫</a>
+                        <a href="#">聚划算</a>
+                        <a href="#">全球速卖通</a>
+                        <a href="#">阿里巴巴国际交易市场</a>
+                        <a href="#">1688</a>
+                        <a href="#">阿里妈妈</a>
+                        <a href="#">阿里旅行-去啊</a>
+                        <a href="#">阿里云计算</a>
+                        <a href="#">Alios</a>
+                        <a href="#">阿里通信</a>
+                        <a href="#">万网</a>
+                        <a href="#">高德</a>
+                        <a href="#">优视</a>
+                        <a href="#">友盟</a>
+                        <a href="#">虾米</a>
+                        <a href="#">天天动听</a>
+                        <a href="#">来往</a>
+                        <span>钉钉</span>
+                    </li>
+                    <!--最底部小图片-->
+                    <li class="certs">
+                        <a href="#" class="pic1"></a>
+                        <a href="#" class="pic2"></a>
+                        <a href="#" class="pic3"></a>
+                        <a href="#" class="pic4"></a>
+                        <a href="#" class="pic5"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </li>
+</ul>
+</body>
+</html>
